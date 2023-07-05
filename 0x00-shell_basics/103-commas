@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -ap1 | sort -d | awk '{ORS = (NR%2 == 0 ? ",\n" : ", ")} 1' | sed '1s/,\s$//'
